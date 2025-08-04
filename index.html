@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="style.css">
+  <title>Cinemaps | Felatalia</title>
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+<!-- Leaflet JS -->
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+</head>
+
+<body>
+   <nav>
+    <div class="nav__header">
+      <div class="nav__logo">
+        <a href="#"><span>CineMaps</span></a>
+      </div>
+      <div class="nav__menu__btn" id="menu-btn">
+        <i class="ri-menu-4-line"></i>
+      </div>
+    </div>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#Cerita-1">Cerita</a></li>
+      <li><a href="#cobaAR">Coba AR</a></li>
+      <li><a href="#map">Peta</a></li>
+      <li><a href="#footer">Kontak</a></li>
+    </ul>
+  </nav>
+
+ <header id="home">
+    <video background autoplay muted loop playsinline>
+      <source src="aset/KKN di Desa Penari Official Trailer.mp4" type="video/mp4" />
+    </video>
+    <div class="header__content">
+      <h1><span>Temukan lokasi Syuting!</span></h1>
+      <p class="section__description">
+        Jelajahi lokasi-lokasi syuting asli dari film horor legendaris Indonesia KKN di Desa Penari
+      </p>
+    </div>
+  </header>
+  
+  <section class="section__container choose__container anim-slide-up" id="Cerita-1">
+    <div class="choose__image">
+      <img src="aset/posko 2.JPG" alt="choose" />
+      <img src="aset/posko 3.jpg" alt="choose" />
+      <video autoplay muted loop playsinline class="reveal-img delay3">
+      <source src="aset/jogloo video.mp4" type="video/mp4" />
+      </video>
+      <img src="aset/posko 5.jpg" alt="choose" />
+    </div>
+    
+    <div class="choose__content">
+      <h2 class="section__header">Rumah KKN <span></span></h2>
+      <ul class="choose__list">
+        <li>
+          <div>
+            <p>
+              Terletak di Dusun Ngleri, Gunungkidul, rumah warga ini menjadi lokasi utama tempat tinggal para tokoh mahasiswa selama menjalankan program Kuliah Kerja Nyata (KKN). Rumah yang sederhana namun luas ini digambarkan sebagai pusat interaksi sosial mereka dengan warga dan menjadi saksi awal kejanggalan yang perlahan muncul di desa. Dalam film, rumah ini disebut sebagai posko KKN. Dari sinilah alur cerita dimulai: keakraban antar tokoh, kegelisahan Nur, dan perubahan sikap Bima semuanya bermula di rumah ini. Pengambilan gambar di lokasi asli menambah nuansa autentik khas pedesaan yang mencekam. rumah ini di pilih berdasarkan anjuran dari Ibu Dukuh dari Desa Ngleri, Rumah salah satu warga di Desa Ngleri, Kabupaten Gunung Kidul ini dipilih menjadi rumah utama atau sebagai lokasi posko KKN mahasiswa
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section__container choose__container anim-fade-in" id="Cerita-2">
+  <div class="choose__image">
+    <img src="aset/plunyon 3.jpg" alt="choose" />
+    <img src="aset/plunyon 1.jpg" alt="choose" />
+    <video autoplay muted loop playsinline class="reveal-img delay3">
+    <source src="aset/jogloo video.mp4" type="video/mp4" />
+    </video>
+    <img src="aset/plunyon 2.jpg" alt="choose" />
+  </div>
+
+  <div class="choose__content">
+    <h2 class="section__header">Jembatan Plunyon <span></span></h2>
+    <ul class="choose__list">
+      <li>
+        <div>
+          <p>
+            Berlokasi di kawasan wisata Kaliurang, Jembatan Plunyon menjadi salah satu latar pemandangan yang menyimpan kesan horor namun eksotis. Dalam film, jembatan ini menjadi akses masuk ke wilayah desa misterius. Nuansa kabut pagi, suara hutan, dan lengangnya jembatan ini menghadirkan ketegangan mendalam. Banyak penonton yang menganggap tempat ini sebagai representasi “batas” antara realitas dan alam tak kasat mata, menandai momen perubahan nasib para tokoh
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  </section>
+
+ <section class="section__container choose__container anim-slide-left" id="Cerita-3">
+  <div class="choose__image">
+    <img src="aset/kapal 2.jpg" />
+    <img src="aset/kapal 3.jpg" />
+    <video autoplay muted loop playsinline>
+      <source src="aset/jogloo video.mp4" type="video/mp4" />
+    </video>
+    <img src="aset/B kapal.jpg" />
+  </div>
+  <div class="choose__content">
+    <h2 class="section__header">Batu Kapal <span></span></h2>
+    <ul class="choose__list">
+      <li>
+        <div>
+          <p>
+            Tebing Batu Kapal yang berlokasi di Kabupaten Sleman, Yogyakarta, menjadi salah satu lokasi syuting penting dalam film KKN di Desa Penari. Tempat ini digunakan dalam adegan ketika karakter Bima tengah mandi seorang diri di aliran sungai, sebelum akhirnya mengalami pertemuan misterius dengan sosok Badarawuhi. Suasana alami tebing yang sunyi dan dikelilingi vegetasi rimbun menjadikan lokasi ini tampak tenang namun menyimpan nuansa mistis. Dalam film, pertemuan antara Bima dan penari gaib tersebut menjadi titik awal perubahan sikap Bima yang kemudian menyeretnya ke dalam pengaruh supranatural desa tersebut. Adegan yang terekam di lokasi ini memberikan sentuhan dramatis sekaligus horor yang kuat terhadap jalannya alur cerita.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+  <section class="section__container choose__container anim-zoom-in" id="Cerita-4">
+  <div class="choose__image">
+    <img src="aset/Joglo depan.JPG" alt="choose" />
+    <img src="aset/Joglo_samping.JPG" alt="choose" />
+    <video autoplay muted loop playsinline class="reveal-img delay3">
+    <source src="aset/jogloo video.mp4" type="video/mp4" />
+    </video>
+    <img src="aset/joglo 2.jpg" alt="choose" />
+  </div>
+
+  <div class="choose__content">
+    <h2 class="section__header">Joglo Wanagama <span></span></h2>
+    <ul class="choose__list">
+      <li>
+        <div>
+          <p>
+            Joglo ini adalah lokasi utama dari salah satu adegan paling ikonik: tarian mistis Badarawuhi. Dengan latar joglo Jawa klasik dan pencahayaan temaram, tempat ini menciptakan atmosfer magis sekaligus menakutkan. Gamelan, asap kemenyan, dan iringan tari membentuk pengalaman visual yang menghipnotis sekaligus menyeramkan.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  </section>
+  
+  <!-- SECTION COBA AR -->
+<section class="section__container ar__container" id="cobaAR">
+  <div class="ar__content">
+    <div class="ar__header">
+      <h2>Coba AR Sekarang</h2>
+      <p>
+        Rasakan pengalaman langsung lokasi syuting dengan teknologi Augmented Reality.
+        Klik tombol di bawah atau scan QR code untuk mencoba!
+      </p>
+    </div>
+
+    <div class="ar__options">
+      <!-- TINGGAL 1 BOX -->
+      <div class="ar__option">
+        <div class="ar__icon">
+          <i class="ri-vr-line"></i>
+        </div>
+        <a href="https://8thwall.com/your-ar-link-rumahkkn" target="_blank" class="ar__btn">
+          klik disini
+        </a>
+        <div class="qr__code">
+          <img src="aset/qr_kkn.png" alt="QR AR Rumah KKN" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--SECTION PETA-->
+  <section class="section__container map__section center-content" id="peta">
+    <h2 class="section__header">Peta Interaktif <span></span></h2>
+    <p class="section__description">
+      Klik ikon lokasi pada peta untuk mengetahui lokasi syuting film <em>KKN di Desa Penari</em>
+    </p>
+    <div id="map"></div>
+  </section>
+
+  <!-- Footer Section -->
+<footer id="footer">
+  <div class="footer-container">
+    <div class="footer-content">
+      <!-- Tentang CineMaps -->
+      <div class="footer-section">
+        <h3>Tentang CineMaps</h3>
+        <p>Platform interaktif untuk menjelajahi lokasi syuting film horor legendaris Indonesia KKN di Desa Penari. Temukan cerita di balik setiap lokasi.</p>
+      </div>
+
+      <!-- Menu Navigasi -->
+      <div class="footer-section">
+        <h3>Navigasi</h3>
+        <ul>
+          <li><a href="#home"><i class="ri-home-line"></i>Home</a></li>
+          <li><a href="#Cerita-1"><i class="ri-book-open-line"></i>Cerita</a></li>
+          <li><a href="#cobaAR"><i class="ri-earth-line"></i>CobaAR</a></li>
+          <li><a href="#map"><i class="ri-map-pin-line"></i>Peta Lokasi</a></li>
+          <li><a href="#footer"><i class="ri-mail-line"></i>Kontak</a></li>
+        </ul>
+      </div>
+
+      <!-- Lokasi Syuting -->
+      <div class="footer-section">
+        <h3>Lokasi Syuting</h3>
+        <ul>
+          <li><i class="ri-building-line"></i>Posko KKN - Gunungkidul</li>
+          <li><i class="ri-building-line"></i>Jembatan Plunyon - Kaliurang</li>
+          <li><i class="ri-landscape-line"></i>Batu Kapal - Sleman</li>
+          <li><i class="ri-ancient-gate-line"></i>Joglo Wanagama-Gunungkidul</li>
+        </ul>
+      </div>
+
+      <!-- Kontak -->
+      <div class="footer-section">
+        <h3>Hubungi Kami</h3>
+        <ul>
+          <li><i class="ri-map-pin-line"></i>Yogyakarta, Indonesia</li>
+          <li><i class="ri-linkedin-line"></i>Felatalia Fajar Farahwati</li>
+        </ul>
+        
+        <div class="newsletter">
+          <h4>Kirim pesan</h4>
+          <p>Punya Saran dan Masukkan? </p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Email Anda" class="newsletter-input" id="newsletterEmail">
+            <button class="newsletter-btn" onclick="subscribeNewsletter()">
+              <i class="ri-send-plane-fill"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <img src="aset/logo_upn.png" alt="Logo UPN" class="footer__logo" style="height: 40px; width: auto;">
+      <p>&copy; 2025 CineMaps | Felatalia. Semua hak cipta dilindungi undang-undang.</p>
+      <div class="footer-links">
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button class="back-to-top" onclick="scrollToTop()" title="Kembali ke atas">
+  <i class="ri-arrow-up-line"></i>
+</button>
+
+ <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+</body>
+</html>
